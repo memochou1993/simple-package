@@ -10,7 +10,7 @@ class TestCase extends OrchestraTestCase
 {
     /**
      * @param  \Illuminate\Foundation\Application  $app
-     * @return \Memo\SimplePackageServiceProvider
+     * @return array
      */
     protected function getPackageProviders($app)
     {
