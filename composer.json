@@ -1,0 +1,37 @@
+{
+    "name": "memochou1993/simple-package",
+    "authors": [
+        {
+            "name": "Memo Chou",
+            "email": "memochou1993@hotmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.0",
+        "illuminate/support": ">=5.5"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^6.5",
+        "orchestra/testbench": "^3.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Memo\\SimplePackage\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Memo\\SimplePackage\\Test\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Memo\\SimplePackage\\SimplePackageServiceProvider"
+            ],
+            "aliases": {
+                "SimplePackage": "Memo\\SimplePackage\\SimplePackageFacade"
+            }
+        }
+    }
+}
